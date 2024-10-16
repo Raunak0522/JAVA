@@ -1,0 +1,48 @@
+Data is the collections of raw and facts.
+DSA main goal is too solve problem effectively and efficiently.
+To determine the efficiently of program.There are 2 types of complexities.
+1-Time complexity-Amount of time code takes to run in input size.
+2-Space complexity-Amount of memory code takes to run.
+
+//---------------------ASYMPTOTIC NOTATIONS----------------
+1-We use asymptotic notations to determine the efficiency of program
+2-Its a mathematical tool that estimates time based on the input size without running the code.
+
+Types-
+1.Big O(O)-It tell the worst case scenario or the upper bound of how the algorithm performs as the input size increses.
+
+2.Omega(Ω)-It tell the best case scenario or the lower bound .
+
+3.Theta()-It tells the average case scenario as the input grows.
+
+//----------------COMMON TIME COMPLEXITY-----------------------
+1-O(1):-Constant Time:-the algorithm runtime doesnot change with input size.
+
+2-O(log n):-Logarithmic Time:-the algorithm reduces the problem size each time ,such as binary search(divides the problem into 2 parts then compare the element with mid either small or big)
+
+3-O(n):-Linear Time -the algorithm's runtime increases proportionally to the input size.
+
+4-O(n log n):-Linearithmic time:-commonly seen in efficient sorting algorithm like merge sort.
+
+5-O(n^2):-Quadratic Time :- typically seen in algorithm that involve nested loops like Bubble sort.
+
+6-O(2^n):-Exponential time:-the runtime doubles with each addition to the input.
+
+7-O(n!):-Factorial Time:-seen in algorithm that involve generating all permutations ,such as travelling salesman problem.
+
+//---------------------How to find the Time complexity-------------
+
+1-Step 1-Identify the loops or recursive calls of an algorithm.
+    *If the algorithm has single loop that runs n times then time complexity is O(n)
+    
+    *If there is nested loop,then the time complexity will be O(n^2),O(n*m)or hogher.
+
+2-Step 2-For each operation,figure out how many times it runs when the input grows.
+    *Constant Time operation like (simple arithmetic) are O(1).
+
+    *Recursive algorithm may have more time complexities thatb depends on the depth of the recursion.
+
+3-Step 3-Drop constants and non dominant terms.
+    * If u have O(n+100),its simply O(n) because constants dont matter in Big O notations. 
+
+    *For example ,O(n^2+n) is simplified to O(n^2) because the quadratic terms dominates.
